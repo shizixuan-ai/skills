@@ -1,6 +1,7 @@
 {
   "name": "mattpocock-skills",
   "skills": [
+    "./skills/engineering/architecture-scan",
     "./skills/engineering/diagnose",
     "./skills/engineering/grill-with-docs",
     "./skills/engineering/triage",
@@ -11,6 +12,7 @@
     "./skills/engineering/to-prd",
     "./skills/engineering/zoom-out",
     "./skills/engineering/prototype",
+    "./skills/engineering/research-first",
     "./skills/productivity/caveman",
     "./skills/productivity/grill-me",
     "./skills/productivity/handoff",

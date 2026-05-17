@@ -146,6 +146,7 @@ Software engineering fundamentals matter more than ever. These skills are my bes
 
 Skills I use daily for code work.
 
+- **[architecture-scan](./skills/engineering/architecture-scan/SKILL.md)** — Lightweight automated architecture health check (file sizes, module boundaries, tech debt markers, domain glossary staleness). Use as a pre-push hook or CI check to detect drift early.
 - **[diagnose](./skills/engineering/diagnose/SKILL.md)** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
 - **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)** — Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates `CONTEXT.md` and ADRs inline.
 - **[triage](./skills/engineering/triage/SKILL.md)** — Triage issues through a state machine of triage roles.
@@ -156,6 +157,7 @@ Skills I use daily for code work.
 - **[to-prd](./skills/engineering/to-prd/SKILL.md)** — Turn the current conversation context into a PRD and submit it as a GitHub issue. No interview — just synthesizes what you've already discussed.
 - **[zoom-out](./skills/engineering/zoom-out/SKILL.md)** — Tell the agent to zoom out and give broader context or a higher-level perspective on an unfamiliar section of code.
 - **[prototype](./skills/engineering/prototype/SKILL.md)** — Build a throwaway prototype to flesh out a design — either a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route.
+- **[research-first](./skills/engineering/research-first/SKILL.md)** — Search GitHub and package ecosystems for existing solutions before writing code, producing a structured buy-vs-build research report, and degrading gracefully into prototype or tdd when no suitable candidate exists.
 
 ### Productivity
 
