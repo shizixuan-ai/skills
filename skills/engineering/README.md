@@ -2,6 +2,7 @@
 
 Skills I use daily for code work.
 
+- **[architecture-scan](./architecture-scan/SKILL.md)** — Lightweight automated architecture health check (file sizes, module boundaries, tech debt markers, domain glossary staleness). Use as a pre-push hook or CI check to detect drift early.
 - **[diagnose](./diagnose/SKILL.md)** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
 - **[grill-with-docs](./grill-with-docs/SKILL.md)** — Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates `CONTEXT.md` and ADRs inline.
 - **[triage](./triage/SKILL.md)** — Triage issues through a state machine of triage roles.
