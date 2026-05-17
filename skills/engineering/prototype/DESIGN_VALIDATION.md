@@ -109,6 +109,23 @@ For FAIL, include concrete alternatives — not just "this doesn't feel right" b
 - **PASS WITH NOTES**: Update the design doc / interface spec with the minor fixes, then delete the prototype.
 - **FAIL**: Write the feedback into the design doc or create a quick update to the PRD. Delete the prototype — the calling code was throwaway, but the interface lessons are not.
 
+In all cases, update the phase tracking:
+
+- **PASS / PASS WITH NOTES**: Set phase to `validated` with next step `tdd`.
+  ```bash
+  scripts/phase.sh set validated "/tdd" "接口已验证。下一步运行 /tdd 实现"
+  ```
+
+- **FAIL**: Set phase to `aligned` with next step `grill-with-docs` (return to design).
+  ```bash
+  scripts/phase.sh set aligned "/grill-with-docs" "设计验证未通过。下一步运行 /grill-with-docs 重新讨论设计"
+  ```
+
+Then print the phase status:
+```bash
+scripts/phase.sh status
+```
+
 In all cases, the prototype itself is throwable. Do not keep it around "just in case" — keep the lessons, not the code.
 
 ## Anti-patterns

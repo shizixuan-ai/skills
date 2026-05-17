@@ -37,3 +37,15 @@ State the assumption at the top of the prototype.
 The _answer_ is the only thing worth keeping from a prototype. Capture it somewhere durable (commit message, ADR, issue, or a `NOTES.md` next to the prototype) along with the question it was answering. If the user is around, that capture is a quick conversation; if not, leave the placeholder so they (or you, on the next pass) can fill in the verdict before deleting the prototype.
 
 For design validation prototypes specifically, the pass/fail verdict and any interface changes should be captured in the design doc or ADR before the prototype is deleted — the calling code was throwaway, but the interface decisions it validated are not.
+
+After capturing the answer, update the phase file so the next session knows where to pick up:
+
+```bash
+# Update phase file with the current state
+scripts/phase.sh set <phase> <next-command> <hint-text>
+
+# Show the status box
+scripts/phase.sh status
+```
+
+Each branch document (LOGIC.md, DESIGN_VALIDATION.md, UI.md) specifies the exact phase values and next steps for its verdict.

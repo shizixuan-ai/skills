@@ -93,6 +93,26 @@ End with a clear handoff signal:
 - **Build** → "No suitable library found. Degrading to prototype to validate custom approach, then tdd."
   Then immediately transition — do not wait for the user to re-prompt.
 
+### 7. Update phase tracking
+
+After completing the research, update the project's phase file so the next session (or next skill) knows where to pick up:
+
+- **Buy / Hybrid**: Set phase to `researched` with next step `tdd`.
+  ```bash
+  scripts/phase.sh set researched "/tdd" "调研完成。下一步运行 /tdd 实现集成代码"
+  ```
+
+- **Build**: Set phase to `researched` with next step `prototype` (design validation).
+  ```bash
+  scripts/phase.sh set researched "/prototype" "调研完成，无合适库。下一步运行 /prototype 验证自研方案设计"
+  ```
+
+Then print the phase status so the user sees the next step:
+
+```bash
+scripts/phase.sh status
+```
+
 ## Anti-patterns
 
 - **Over-searching**: Don't search for more than 15 minutes worth of queries. If nothing obvious appears in the first wave, move to build.
