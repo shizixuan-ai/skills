@@ -11,7 +11,7 @@ set -u
 #   scripts/phase.sh clear         # 重置（无阶段）
 #
 # Phase transitions:
-#   aligned → researched → validated → implementing
+#   aligned → researched → planned → validated → implementing
 
 PHASE_FILE=".claude/phase"
 

@@ -97,15 +97,10 @@ End with a clear handoff signal:
 
 After completing the research, update the project's phase file so the next session (or next skill) knows where to pick up:
 
-- **Buy / Hybrid**: Set phase to `researched` with next step `tdd`.
-  ```bash
-  scripts/phase.sh set researched "/tdd" "调研完成。下一步运行 /tdd 实现集成代码"
-  ```
-
-- **Build**: Set phase to `researched` with next step `prototype` (design validation).
-  ```bash
-  scripts/phase.sh set researched "/prototype" "调研完成，无合适库。下一步运行 /prototype 验证自研方案设计"
-  ```
+Regardless of outcome (Buy / Hybrid / Build), set phase to `researched` with next step `to-prd` to archive the research decision:
+```bash
+scripts/phase.sh set researched "/to-prd" "调研完成。下一步运行 /to-prd 将调研结论归档为 PRD"
+```
 
 Then print the phase status so the user sees the next step:
 

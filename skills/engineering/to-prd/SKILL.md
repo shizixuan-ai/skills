@@ -19,6 +19,14 @@ Check with the user that these modules match their expectations. Check with the 
 
 3. Write the PRD using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
+4. **Update phase tracking.** After publishing the PRD, set the phase to `planned`. Determine the next step from conversation context — if the research-first outcome was **Buy** or **Hybrid**, next is `/tdd`; if **Build**, next is `/prototype`. Default to `/tdd`.
+
+   ```bash
+   # Set phase to planned. Determine next step from context (buy→/tdd, build→/prototype)
+   scripts/phase.sh set planned "/prototype" "PRD 已发布。结论: Build, 下一步运行 /prototype 验证设计"
+   scripts/phase.sh status
+   ```
+
 <prd-template>
 
 ## Problem Statement
