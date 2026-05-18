@@ -85,4 +85,13 @@ Only offer to create an ADR when all three are true:
 
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
 
+### Update phase tracking
+
+After the grilling session completes, set the phase to `aligned`:
+
+```bash
+scripts/phase.sh set aligned "/research-first" "需求已对齐。下一步运行 /research-first 进行 buy-vs-build 调研"
+scripts/phase.sh status
+```
+
 </supporting-info>
