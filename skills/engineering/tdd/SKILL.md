@@ -107,3 +107,12 @@ After all tests pass, look for [refactor candidates](refactoring.md):
 [ ] Code is minimal for this test
 [ ] No speculative features added
 ```
+
+## Update phase tracking
+
+When implementation is complete (all tests pass and refactoring is done), set the phase to `implementing`:
+
+```bash
+scripts/phase.sh set implementing "-" "TDD 实现完成, 测试通过"
+scripts/phase.sh status
+```
